@@ -72,7 +72,9 @@ Add PropertySplitCity Nvarchar(255);
 UPDATE PortfolioProject..NashvilleHousing
 SET PropertySplitCity = SUBSTRING(PropertyAddress, CHARINDEX(',', PropertyAddress) +1, LEN(PropertyAddress))
 
---3. Diviser OwnerAddress en colonnes individuelles (Adress, City, State)
+----------------------------------------------------------------------------------------------------------------
+
+--4. Diviser OwnerAddress en colonnes individuelles (Adress, City, State)
 
 SELECT OwnerAddress
 FROM PortfolioProject..NashvilleHousing
@@ -107,6 +109,7 @@ SET OwnerSplitState = PARSENAME(REPLACE (OwnerAddress,',','.') ,1)
 
 SELECT *
 FROM PortfolioProject..NashvilleHousing
+
 ----------------------------------------------------------------------------------------------------------------
 
 --5. Change Y and N to Yes and No in "Sold as Vacant" field
