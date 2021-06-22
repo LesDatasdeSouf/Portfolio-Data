@@ -1,6 +1,6 @@
 /*
 
- Nettoyage de données avec SQL
+ Nettoyage de donnÃ©es avec SQL
 
 */
 
@@ -22,7 +22,7 @@ Add SaleDateConverted Date;
 
 ----------------------------------------------------------------------------------------------------------------
 
---2. Peupler les données de PropertyAdress
+--2. Peupler les donnÃ©es de PropertyAdress
 
 SELECT *
 FROM PortfolioProject.dbo.NashvilleHousing
@@ -163,7 +163,7 @@ FROM PortfolioProject..NashvilleHousing
 
 ----------------------------------------------------------------------------------------------------------------
 
---7. Supprimer les colonnes inutilisées
+--7. Supprimer les colonnes inutilisÃ©es
 
 SELECT * 
 FROM PortfolioProject..NashvilleHousing
